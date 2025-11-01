@@ -1,0 +1,16 @@
+cat > .gitignore <<'EOF'
+/vendor/
+/node_modules/
+/.env
+.env.*.backup
+/public/build
+/public/hot
+/storage/*.key
+/.idea
+/.vscode
+.DS_Store
+npm-debug.log
+yarn-error.log
+EOF
+git add .gitignore
+git commit -m "chore: add .gitignore" || true
